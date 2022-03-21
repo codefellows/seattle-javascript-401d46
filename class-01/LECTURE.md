@@ -51,4 +51,6 @@ ThunderClient and Supertest with Jest.
 
 ## Continuous Integration
 
+Link to our [Continuous Integration and Test Project](https://github.com/JacobKnaack/class-01-ci)
+
 (Back in the afternoon to talk about Whiteboarding / Code Challenges)
