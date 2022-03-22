@@ -12,7 +12,7 @@ The input should be an array of any values and a callback function that receives
 
 ```javascript
 let array = [1,2,3,4];
-$$.map(array, (val,idx) => {
+map(array, (val,idx) => {
   return val * val;
 });
 

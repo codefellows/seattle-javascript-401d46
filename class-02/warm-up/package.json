@@ -4,7 +4,8 @@
   "description": "Array mapping function",
   "main": "map.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --coverage --verbose",
+    "watch": "jest --coverage --watchAll"
   },
   "keywords": [],
   "author": "",
