@@ -59,10 +59,10 @@ app.use(errorHandler);
 We can perform CRUD using the sequelize library:
 
 ```javascript
-Model.create(QUERY)
-Model.findAll(QUERY)
-Model.update(QUERY)
-Model.destroy(QUERY)
+Model.create(QUERY) // (C)reate a resource
+Model.findAll(QUERY) // (R)ead from a resource
+Model.update(QUERY) // (U)pdate a resource
+Model.destroy(QUERY) // (D)elete a resource
 ```
 
 ## TDD: REST API
