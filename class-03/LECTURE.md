@@ -56,4 +56,24 @@ app.use(errorHandler);
 
 ## CRUD with SQl
 
+We can perform CRUD using the sequelize library:
+
+```javascript
+Model.create(QUERY)
+Model.findAll(QUERY)
+Model.update(QUERY)
+Model.destroy(QUERY)
+```
+
 ## TDD: REST API
+
+Our Routes should follow a pattern that matches HTTP methods to CRUD methods:
+
+```javascript
+
+app.get('/people', handleReadPeople);
+app.post('/people', handleCreatePeople);
+app.put('/people/:id', handleUpdatePeople);
+app.get('/people/:id', handleDeletePeople);
+
+```
