@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test jest --verbose --watchAll",
+    "start": "node index.js",
     "db:config": "sequelize init:config",
     "db:create": "sequelize db:create"
   },
@@ -12,9 +13,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.3",
+    "jest": "^27.5.1",
     "pg": "^8.7.3",
     "sequelize": "^6.17.0",
     "sequelize-cli": "^6.4.1",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.2.2"
   }
 }

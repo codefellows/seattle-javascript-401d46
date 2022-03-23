@@ -11,4 +11,21 @@ describe('Testing the filter method', () => {
 
     expect(newArray).toEqual([2, 4]);
   });
+
+  test('Should filter an object', () => {
+    let object = { Betty: 'cat', Benny: 'dog', Bowser: 'dog', Roscoe: 'cat'};
+
+
+    let newObject = filter(object, (val, key) => {
+      return val === 'cat';
+    });
+
+    expect(newObject).toBe({ Betty: 'cat', Roscoe: 'cat' });
+  });
 });
+
+
+// from mdn array.filter
+// filter((element) => { /* ... */ } )
+// filter((element, index) => { /* ... */ } )
+// filter((element, index, array) => { /* ... */ }

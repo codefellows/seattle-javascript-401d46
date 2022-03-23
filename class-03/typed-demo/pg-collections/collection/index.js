@@ -1,15 +1,23 @@
 'use strict';
 
 const { Sequelize, DataTypes } = require('sequelize');
+const peopleSchema = require('./people.schema.js');
 
-const DATABASE_URL = process.env.DATABASE_URL || 'postgresql://localhost:5432/api-app';
+const DATABASE_URL = process.env.NODE_ENV === 'test'
+  ? 'sqlite::memory'
+  : process.env.DATABASE_URL || 'postgresql://localhost:5432/api-app';
 
-const sequelizeInstance = new Sequelize(DATABASE_URL);
+const sequelize = new Sequelize(DATABASE_URL, {
+  dialectOptions: {
+    ssl: {
+      require: true,
+      rejectUnauthorized: false,
+    },
+  },
+});
+const PeopleModel = peopleSchema(sequelize, DataTypes);
 
-sequelizeInstance.sync() // that creates all associated tables and makes sure our connection is good to go
-  .then(() => {
-    console.log('Success!!!');
-  })
-  .catch(err => {
-    console.error(err);
-  });
+module.exports = {
+  sequelize,
+  PeopleModel,
+};
