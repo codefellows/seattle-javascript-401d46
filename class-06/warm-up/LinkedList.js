@@ -26,9 +26,32 @@ class LinkedList {
     return result;
   }
 
-  add() {
+  // what parameters???
+  add(value) {
+    let nodeToAdd = new Node(value);
+    nodeToAdd.next = this.head;
 
+    this.head = nodeToAdd;
+    // if (this.head === null) {
+    //   this.head = nodeToAdd;
+    // }
+  }
+
+  // what parameters?
+  includes(value) {
+    let current = this.head;
+    while(current !== null) {
+      if (current.value === value) {
+        return true;
+      }
+      current = current.next;
+    }
+
+    return false;
   }
 }
 
-module.exports = LinkedList;
+module.exports = {
+  Node,
+  LinkedList,
+};
