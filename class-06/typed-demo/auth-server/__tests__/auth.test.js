@@ -36,7 +36,7 @@ describe('testing our auth features', () => {
   it ('should allow an authenticated header through', async () => {
     let authString = 'Jacob:supersecret';
     let encodedString = base64.encode(authString);
-    let response = await request.get('/users').set('authorization', `Basic ${encodedString}`);
+    let response = await request.get('/users').set('Authorization', `Basic ${encodedString}`);
 
     expect(response.status).toEqual(200);
     expect(response.body[0].username).toEqual('Jacob');

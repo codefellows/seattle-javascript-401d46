@@ -70,6 +70,8 @@ We covered Linked Lists: Linear Sequence of Nodes.
 
 ## TDD: Basic Auth Router
 
+![Auth Server UML](./assets/uml.png)
+
 POST => `http://localhost:3000/signup`
 
 GET / POST / PUT / DELETE  => `http://localhost:3000/users`
