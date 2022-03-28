@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-### Data Structure: <!-- TBD: Fill In Name -->
+### Data Structure: Linked Lists
 
 - Implement
 - Document
@@ -10,7 +10,7 @@
 
 ### Career Coaching Workshop
 
-<!-- Summary To Be Completed By Instructor -->
+Workshop #1: Resumes
 
 ## Today's Outline
 
