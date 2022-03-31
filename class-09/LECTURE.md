@@ -22,3 +22,17 @@ See warm Up folder
 ## Final Auth Lab
 
 Ya'll will pair up and build your own solution to a problem domain of your choosing.
+
+## Jest API
+
+Integration Test vs Unit Tests
+
+* Intgration tests focus on integrating modules and libraries to produce specific behavior
+* Unit test only test the code you write.
+  * Out of scope: other code modules and libraries.
+
+### Runtime Environments
+
+Node > Jest
+
+![Jest Environment](./assets/jest_env.png)
