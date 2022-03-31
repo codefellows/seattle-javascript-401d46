@@ -44,6 +44,28 @@ class LinkedList {
 
     return false;
   }
+
+  /** JS Docs
+   *
+   * @param {Function} cb - function to run on reach value in the list
+   * @returns {LinkedList} result
+   */
+  filter(cb) {
+    const result = new LinkedList();
+
+    // get through the list to read all values
+    let current = this.head;
+    while(current) {
+      if(cb(current.value)) {
+        // if it does add to the new list
+        result.add(current.value);
+      } // does the callback return true or false?
+      // if not, do nothing
+
+      current = current.next;
+    }
+    return result;
+  }
 }
 
 module.exports = {
