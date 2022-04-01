@@ -26,7 +26,7 @@
 
 ### Career Coaching Workshop
 
-Workshop #3 - Personal Pictch
+Workshop #2 - Personal Pictch
 
 ## Today's Outline
 
