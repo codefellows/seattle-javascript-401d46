@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jest": "^27.5.1"
+  },
+  "name": "events",
+  "version": "1.0.0",
+  "main": "eventPool.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
