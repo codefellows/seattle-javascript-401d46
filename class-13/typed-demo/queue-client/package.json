@@ -1,0 +1,22 @@
+{
+  "name": "queue-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "messenger.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "messenger": "node messenger.js",
+    "recipient": "node recipient.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chance": "^1.1.8",
+    "jest": "^27.5.1",
+    "socket.io-client": "^4.4.1"
+  }
+}
