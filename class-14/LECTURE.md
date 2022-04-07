@@ -19,7 +19,7 @@ examples `{}` => `{` , `}`
   - Once all string values have been accounted for and our stack is empty we can return true.
   - If there is something remaining in the stack || if there is unaccounted string characters with no match.
 
-Using regex?  Yes!
+- Using regex?  Yes!
   - filtering out the non bracket characters.
 
 ## Review
@@ -27,6 +27,7 @@ Using regex?  Yes!
 - Lab 13
 
 Garantee message delivery to subcribers
+
 - Driver - subscriber to `pickup` event.
   - pickup queue
 - Vendor - subscriber to `delivered` event.
