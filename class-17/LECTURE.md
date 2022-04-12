@@ -1,8 +1,10 @@
 # Class 17: s3 and Lambda
 
+[Whiteboard link](https://projects.invisionapp.com/freehand/document/TaXVxswu5)
+
 ## Warm Up
 
-* Prompt:
+* Prompt: Given a Linked List of integer values, reverse the list in place.
 
 ## Review
 
