@@ -16,3 +16,7 @@ Prompt:
 ## RESTful Routing / API Gateway
 
 ## Cloud Database (DynamoDb)
+
+### Publishing Lambdas via Github
+
+[handle Read Repo](https://github.com/JacobKnaack/handleRead)
