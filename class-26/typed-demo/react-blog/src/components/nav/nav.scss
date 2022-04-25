@@ -1,0 +1,51 @@
+// to install:  npm install sass
+// create varaiables with sass
+$background-color: bisque;
+$text-color: purple;
+
+// mixin lets you define re-uasable code blocks!
+// perhaps could be in a central location and @import
+@mixin theme($background: pink){
+  background-color: $background;
+  color: $text-color;
+}
+
+// more vanilla syntax left for comparison
+// nav {
+//   // @include theme
+// border: 1px solid white;
+// margin: 5px;
+
+// }
+
+// nav > ul {
+//   padding-inline-start: 0px;
+// }
+
+// nav > ul > li {
+//   @include theme;
+//   display: inline-block;
+//   margin: 10px 25px;
+//   padding: 5px;
+// }
+
+// sass-ier way
+nav {
+  // use @include to "use" our mixin - defined above
+  // @include theme;
+  border: 1px solid white;
+  margin: 5px;
+  
+  ul {
+    padding-inline-start: 0px;
+    
+    li {
+      @include theme;
+      display: inline-block;
+      margin: 10px 25px;
+      padding: 5px;
+    }
+  }
+}
+
+

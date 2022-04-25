@@ -37,4 +37,9 @@ Every "component" is either a class or a function.
   * Both Props and "High Order State Managment"
   * Organisms > Molecules > atoms.
 
+* Sass - CSS with superpowers
+  * Variables
+  * nested rules - we can organize differently with sass!
+  * mixins / include
+
 ## TDD: Hooks / Testing

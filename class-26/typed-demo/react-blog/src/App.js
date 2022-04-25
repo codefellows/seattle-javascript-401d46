@@ -4,6 +4,7 @@ import './App.css';
 
 import SideNav from './components/sideNav/SideNav';
 import ArticleList from './components/articleList/ArticleList';
+import Nav from './components/nav/Nav';
 
 // Our root level component
 function App() {
@@ -32,6 +33,7 @@ function App() {
         >
           Learn React
         </button>
+        <Nav />
       </header>
       <SideNav>
         <ArticleList />
