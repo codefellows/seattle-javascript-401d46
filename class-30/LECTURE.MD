@@ -10,6 +10,9 @@
   - "bi" nary tree has up to 2 descendants
   - "K" Ary tree has up to "K" descendants
 - Sorts (arrays)
+## Whiteboard
+
+[HashTables](https://projects.invisionapp.com/freehand/document/6KkaXxkxs)
 
 ## Overview
 
