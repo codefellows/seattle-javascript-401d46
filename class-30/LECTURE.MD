@@ -5,7 +5,7 @@
 - Linked Lists, Stacks, Queues
   - each node links to at least one otehr node 
   - in simple form, links to ONE other node
-- Binary Trees & Binary Search Tree, K-Ary trees
+- Binary Trees & Binary Search Trees, K-Ary trees
   - heirarchy.  descend from a root.  
   - "bi" nary tree has up to 2 descendants
   - "K" Ary tree has up to "K" descendants
@@ -16,7 +16,7 @@
 
 ## Overview
 
-It's structure that stores key value pairs.  Location, Location, Location!  location in the structure is determined by a hashing function
+HashTable is a structure that stores key value pairs.  Location, Location, Location!  location in the structure is determined by a hashing function
 
   - WHY?!  
      - Micha:  Performant lookup
@@ -29,8 +29,11 @@ It's structure that stores key value pairs.  Location, Location, Location!  loca
   - our algorthim will plan for collisions, 
   - Some Languages have BUILT IN functionality
 
-- Bucket:  Jeffrey
+- Location:
+  - Jeffrey:  Bucket
   - Micha:  an address
+
+- Bucket:  some other dynamic structure that can handle mutiple values that would belong in this location. An Array or Linked List.
 
 - Collision:  when 2 or more keys hash to teh same position in our Table.   
   - perfect hash would provide NO collisions
