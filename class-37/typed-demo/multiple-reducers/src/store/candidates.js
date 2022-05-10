@@ -4,7 +4,10 @@ const initialState = [
   {name: 'Jamie', votes: 0}
 ]
 
-export default function candidateReducer(state = initialState, action) {
+export default function candidateReducer(
+  state = initialState,
+  action
+) {
 
   switch(action.type) {
     case 'INCREMENT':

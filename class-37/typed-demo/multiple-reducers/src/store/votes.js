@@ -2,7 +2,10 @@ const initialState = {
   total: 0,
 }
 
-export default function voteReducer(state = initialState, action) {
+export default function voteReducer(
+  state = initialState,
+  action
+) {
 
   switch (action.type) {
     case 'INCREMENT':

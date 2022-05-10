@@ -15,7 +15,6 @@ describe('Testing the voting redux state features', () => {
   test('Store should have a vote total, and list of candidates', () => {
 
     const state = store.getState();
-    console.log(state);
     expect(state.votes.total).toBe(0);
   });
 
@@ -26,7 +25,6 @@ describe('Testing the voting redux state features', () => {
     store.dispatch(vote(candidates[0]));
 
     let state = store.getState();
-    console.log(state);
     expect(state.votes.total).toBe(1);
     expect(state.candidates[0].votes).toBe(1);
   });
