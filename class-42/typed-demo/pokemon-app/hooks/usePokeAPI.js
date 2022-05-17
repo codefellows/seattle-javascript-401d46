@@ -6,15 +6,20 @@ function usePokeAPI() {
   const [response, setResponse] = useState({});
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    axios.get('https://pokeapi.co/api/v2/pokemon/')
+  const fetch = (url) => {
+    axios.get(url)
       .then(response => setResponse(response.data))
       .catch(e => setError(e));
+  }
+
+  useEffect(() => {
+    fetch('https://pokeapi.co/api/v2/pokemon/');
   }, []);
 
   return {
     ...response,
     error,
+    fetch
   }
 }
 
