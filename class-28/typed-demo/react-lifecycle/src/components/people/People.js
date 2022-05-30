@@ -6,7 +6,11 @@ function People({ list }) {
     console.log('People list has been updated');
   }, [list]); // only runs when our dependency list is updated
 
-  useEffect(() => () => console.log('component unmounts')); // runs when component unmounts
+  const handleUnmount = () => {
+    console.log('People is unmounting');
+  }
+
+  useEffect(() => handleUnmount, []); // runs when component unmounts
 
   return (
     <div data-testid="people-list">

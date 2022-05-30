@@ -10,7 +10,7 @@ Linked Lists / Stack / Queues
 
 ## Overview
 
-Non lineary Data structure with more than one. Hiearchical organization. Always a-cyclical (more of a graph).
+Non linear Data structure with more than one. Hierarchical organization. Always a-cyclical (more of a graph).
 
 ## Terminology
 
@@ -19,14 +19,14 @@ K-Ary Tree
 Node/Vertex: The storage container that has references to more than one child node.
 Left: A Node that on the "left side" of a parent node.
 Right: A Node that on the "right side" of a parent node.
-Parent: A Node that has one or more children, direct decendents.
-Children: Nodes that are decendents of the root.
+Parent: A Node that has one or more children, direct descendants.
+Children: Nodes that are descendants of the root.
 Siblings / Neighbors: Nodes that share the same direct parent.
 Leaf: Nodes that have no children.
 height:  A number that represents the path (the number of edges) from the root to the furthest leaf.
 Level: The position from the root to the current node.
 Edge: A connection between nodes.
-Balanced Trees: Left and Right subtress differ by no more than 1.
+Balanced Trees: Height of the Left and Right subtrees differ by no more than 1.
 
 ## Traversals
 
@@ -41,9 +41,8 @@ How can we read all values in a Tree?
 
 ## K-ary and Binary Search Trees
 
-Imeplement a Binary Search Tree: Stores stored data, most commonly numbers. Lower numbers are stored on the left subtrees, greater numbers are stored on the right subtrees.
+Implement a Binary Search Tree: Stores stored data, most commonly numbers. Lower numbers are stored on the left subtrees, greater numbers are stored on the right subtrees.
 
 Create an Add Method specifically for a Binary Search Tree.
 
-## Code Challegne
-
+## Code Challenge

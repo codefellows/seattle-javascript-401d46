@@ -25,7 +25,7 @@ class BinaryTree {
 
     let results = [];
 
-    let traverse = (node) => {
+    const traverse = (node) => {
 
       // do
       results.push(node.value);
@@ -41,7 +41,7 @@ class BinaryTree {
   inOrder() {
     let results = [];
 
-    let traverse = (node) => {
+    const traverse = (node) => {
       // where do I go?
       if (node.left) traverse(node.left);
 
@@ -58,7 +58,7 @@ class BinaryTree {
   postOrder() {
     let results = [];
 
-    let traverse = (node) => {
+    const traverse = (node) => {
       // where do I go?
       if (node.left) traverse(node.left);
       if (node.right) traverse(node.right);
